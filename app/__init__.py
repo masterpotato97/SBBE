@@ -10,7 +10,7 @@ from models import db as root_db, login_manager, ma
 from flask_cors import CORS
 from helpers import JSONEncoder
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
 app.register_blueprint(site)
