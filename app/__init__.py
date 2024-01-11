@@ -21,7 +21,7 @@ app.register_blueprint(api)
 app.config.from_object(Config)
 
 # Set up secret key for CSRF protection
-app.config['SECRET_KEY'] = 'Everything in time. One day Soon'
+app.config['SECRET_KEY'] = 'PASSWORD'
 
 # Initialize extensions
 root_db.init_app(app)
